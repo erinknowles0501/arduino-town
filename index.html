@@ -2,43 +2,13 @@
 <html>
     <head>
         <title>Dev tool for arduinotown</title>
-        <script type="module">
-            import townMap from './creators/townMap.js';
-
-            document.onreadystatechange = () => {
-                if (document.readyState === "complete") {
-                    const townMapEl = document.getElementById('townmap');
-
-                    townMap.metres.flat().forEach(metre => {
-                        const metreEl = document.createElement('div');
-                        metreEl.className = 'metre';
-                        metreEl.textContent = metre.display();
-                        townMapEl.appendChild(metreEl);  
-                    });       
-                }
-            };
-        </script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap');
-
-            #townmap {
-                width: 70vw;
-                height: 70vw;
-                display: grid;
-                grid-template-columns: repeat(100, 1fr);
-                grid-template-rows: repeat(100, 1fr);
-                font-family: 'source code pro', 'courier new', 'monospace';
-                font-size: 0.6rem;
-                line-height: 0.4rem;
-                font-weight: 900;
-            }
-
-            #townmap div {
-                transform: scaleY(0.9);
-            }
-        </style>
-    </head>
-    <body>
-        <div id="townmap"></div>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <script type="module" src="./devtool.js"></script>
+        <link rel="stylesheet" type="text/css" href="./devtool-style.css">
+    </style>
+</head>
+<body>
+    <div id="townmap"></div>
+    <div id="hover-show">PEOPLE</div>
+</body>
 </html>

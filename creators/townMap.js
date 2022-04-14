@@ -8,8 +8,6 @@ class Town {
     metres = [];
 
     display() {
-        console.log("Metres square: 32. Total: 1024");
-
         this.metres.forEach((row) => {
             let displayRowString = "";
             row.forEach((metre) => {
@@ -40,7 +38,7 @@ class Metre {
 
 // Generates metres only for town - very large array. No chunks.
 function buildMetreMap(town) {
-    const TOWN_SIDE_SIZE_METRES = 100; // 32*32 = 1024
+    const TOWN_SIDE_SIZE_METRES = 100;
 
     // TODO: Reduce()
     const rows = [];

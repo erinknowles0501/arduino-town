@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap");
+
+#townmap {
+    width: 70vw;
+    height: 70vw;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    font-family: "source code pro", "courier new", "monospace";
+    font-size: 0.6rem;
+    line-height: 0.4rem;
+    font-weight: 900;
+    position: relative;
+}
+
+#townmap div {
+    transform: scaleY(0.9);
+}
+
+.person {
+    color: red;
+    position: absolute;
+    z-index: 10;
+    transform-origin: center;
+}
+
+#hover-show {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+}

@@ -72,3 +72,26 @@ Every so often (once a day? once an hour?) the viewer can influence the town in 
 -   Has a size (1 unit = 1 metre)
 -   Contains tiles with info, which relate to one another
 -   Some of these tiles are kinda like entities?
+
+### Person
+
+-   Has Relationships
+-   Has needs (sleep, eating, socializing..)
+-   Has a personality that dictates some stuff
+-   Has likes
+-   Has dislikes
+-   Has a memory
+-   Has goals and fears
+    -   Can explicitly set some, but also, can generate them based on whether they have an attibute (eg height) that's outside of a normal deviation
+-   Does stuff
+-   Has:
+    -   name,
+    -   gender,
+    -   sexual orientation,
+    -   hair color,
+    -   skin color,
+    -   eye color,
+    -   hair type,
+    -   height,
+    -   weight,
+    -   age...
