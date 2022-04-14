@@ -22,13 +22,19 @@ document.onreadystatechange = () => {
         });
 
         const hoverShowEl = document.getElementById("hover-show");
+        const peopleEls = document.querySelectorAll(".person");
         hoverShowEl.addEventListener("mouseover", () => {
-            const peopleEls = document.querySelectorAll(".person");
             peopleEls.forEach((person) => {
-                person.style.background = "white";
-                person.style.transform = "scale(2)";
+                person.classList.add("person-hover");
+                person.style.transform = "scale(3)";
             });
             console.log("People: ", people);
+        });
+        hoverShowEl.addEventListener("mouseleave", () => {
+            peopleEls.forEach((person) => {
+                person.classList.remove("person-hover");
+                person.style.transform = "";
+            });
         });
     }
 };
