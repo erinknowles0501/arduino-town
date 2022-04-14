@@ -1,0 +1,17 @@
+{
+    "name": "arduinotown",
+    "version": "1.0.0",
+    "description": "---",
+    "main": "index.js",
+    "scripts": {
+        "view": "live-server .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "module",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "live-server": "^1.2.1",
+        "lodash": "^4.17.21"
+    }
+}
